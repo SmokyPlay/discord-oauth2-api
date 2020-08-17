@@ -9,7 +9,7 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SmokyPlay/discord-auth.git"
+    "url": "git+https://github.com/SmokyPlay/discord-oauth2-api"
   },
   "keywords": [
     "discord",
@@ -21,7 +21,7 @@
   "author": "SmokyPlay",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SmokyPlay/discord-auth/issues"
+    "url": "https://github.com/SmokyPlay/discord-oauth2-api/issues"
   },
-  "homepage": "https://github.com/SmokyPlay/discord-auth#readme"
+  "homepage": "https://github.com/SmokyPlay/discord-oauth2-api#readme"
 }
