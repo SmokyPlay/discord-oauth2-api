@@ -1,9 +1,9 @@
-# Discord Auth
+# Discord Oauth2 API
 ### Library for interacting with Discord Oauth2 API
 
 ## Installation
 ```
-$ npm i discord-auth
+$ npm i discord-oauth2-api
 ```
 
 ## Constructor
