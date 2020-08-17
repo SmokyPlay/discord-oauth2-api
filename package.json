@@ -1,5 +1,5 @@
 {
-  "name": "discord-auth",
+  "name": "discord-oauth2-api",
   "version": "1.0.0",
   "description": "Library for Discord Oauth2 API",
   "main": "index.js",
