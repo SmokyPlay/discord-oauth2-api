@@ -1,0 +1,27 @@
+{
+  "name": "discord-auth",
+  "version": "1.0.0",
+  "description": "Library for Discord Oauth2 API",
+  "main": "index.js",
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SmokyPlay/discord-auth.git"
+  },
+  "keywords": [
+    "discord",
+    "oauth2",
+    "discord",
+    "api",
+    "authorization"
+  ],
+  "author": "SmokyPlay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SmokyPlay/discord-auth/issues"
+  },
+  "homepage": "https://github.com/SmokyPlay/discord-auth#readme"
+}
