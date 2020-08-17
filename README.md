@@ -59,7 +59,7 @@ Returns: `Promise<User>`
 #### Example
 
 ```js
-client.getUser('OwxOnwxbAMzsa8ZE9ugYQk5feIJL6K').then(user => conaole.log(user.tag));
+client.getUser('OwxOnwxbAMzsa8ZE9ugYQk5feIJL6K').then(user => console.log(user.tag));
 // 🚀!SMOKY PLAY!🚀#1050
 ```
 
