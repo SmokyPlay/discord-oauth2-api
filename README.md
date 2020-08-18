@@ -121,7 +121,7 @@ client.refreshToken('afzGuTtQI9hhXY4rhMP7lp7RCyaT0C').then(token => console.log(
 | `MFAEnabled` | Boolean | false | Whether the user has two factor enabled |
 | `locale` | String | 'ru' | The user's chosen language option |
 | `flags` | Number | 131328 | User's flags |
-| `premiumType` | NUmber | 1 | The type of user's Nitro subscription
+| `premiumType` | Number | 1 | The type of user's Nitro subscription
 
 ##### Methods
 
