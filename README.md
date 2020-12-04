@@ -22,7 +22,7 @@ $ npm i discord-oauth2-api
 #### Example
 
 ```js
-const Client = require('discord-auth');
+const Client = require('discord-oauth2-api');
 const client = new Client({
     clientID: '665555588004053002',
     clientSecret: 'Z2EkOCKCwr4f6BhCjJ3jGWPZOk7RaRpK',
