@@ -1,5 +1,4 @@
 export = Client;
-
 declare class Client {
   constructor(...args: any[]);
 
