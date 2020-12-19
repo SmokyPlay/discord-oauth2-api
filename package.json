@@ -22,5 +22,6 @@
   "bugs": {
     "url": "https://github.com/SmokyPlay/discord-oauth2-api/issues"
   },
-  "homepage": "https://github.com/SmokyPlay/discord-oauth2-api#readme"
+  "homepage": "https://github.com/SmokyPlay/discord-oauth2-api#readme",
+  "typings": "typings/typings.d.ts"
 }
