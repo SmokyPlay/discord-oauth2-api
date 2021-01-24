@@ -25,7 +25,7 @@ module.exports = class Guild {
         this.features = options.features;
     }
     iconURL(options = {size: 512, format: 'webp', dynamic: false}) {
-        if(this.icon == null) return `https://media.discordapp.net/attachments/708680940385337386/744701622885810336/91_Discord_logo_logos-512.png`
+        if(this.icon === null) return `https://media.discordapp.net/attachments/708680940385337386/744701622885810336/91_Discord_logo_logos-512.png`
         if(options.size % 128 !== 0 || options.size > 2048) throw new Error('Invalid avatar size');
         if (options.dynamic) options.format = this.icon.startsWith('a_') ? 'gif' : options.format;
         return `https://cdn.discordapp.com/icons/${this.id}/${this.icon}.${options.format}?size=${options.size}`
