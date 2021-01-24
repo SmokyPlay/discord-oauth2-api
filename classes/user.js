@@ -38,7 +38,7 @@ module.exports = class User {
      * @returns {String}
      */
     avatarURL(options = {size: 512, format: 'webp', dynamic: false}) {
-        if(this.avatar == null) return `https://cdn.discordapp.com/embed/avatars/${this.discriminator%5}.png?width=230&height=230`
+        if(this.avatar === null) return `https://cdn.discordapp.com/embed/avatars/${this.discriminator%5}.png?width=230&height=230`
         if(options.size % 128 !== 0 || options.size > 2048) throw new Error('Invalid avatar size');
         if (options.dynamic) options.format = this.avatar.startsWith('a_') ? 'gif' : options.format;
         return `https://cdn.discordapp.com/avatars/${this.id}/${this.avatar}.${options.format}?size=${options.size}`
