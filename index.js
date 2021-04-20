@@ -67,7 +67,7 @@ class Client {
         .then(async (response) => {
           let body = await response.json();
           if (response.status < 200 || response.status > 299)
-            reject(new Error(body.error));
+            reject(new Error(body.message));
           else resolve(new User(body));
         })
         .catch((error) => {
@@ -91,7 +91,7 @@ class Client {
         .then(async (response) => {
           let body = await response.json();
           if (response.status < 200 || response.status > 299)
-            reject(new Error(body.error));
+            reject(new Error(body.message));
           let guilds = [];
           body.forEach((guild) => {
             guilds.push(new Guild(guild));
@@ -133,6 +133,41 @@ class Client {
         .catch((error) => {
           reject(error);
         });
+    });
+  }
+  /**
+   * Revoke Oauth2 access token
+   * @param {String} token
+   * @returns {Promise<Token>}
+   */
+  revokeToken(token) {
+    return new Promise((resolve, reject) => {
+      fetch(`${API}/oauth2/token/revoke`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: new URLSearchParams({
+          client_id: this._clientID,
+          client_secret: this._clientSecret,
+          token: token
+        }),
+      })
+          .then(async (response) => {
+            let body = await response.json();
+            if (response.status < 200 || response.status > 299)
+              reject(new Error(body.error));
+            else resolve(new Token({
+              access_token: null,
+              refresh_token: null,
+              expires_in: null,
+              scope: this.scopes.join(" "),
+              token_type: 'Bearer'
+            }));
+          })
+          .catch((error) => {
+            reject(error);
+          });
     });
   }
 }

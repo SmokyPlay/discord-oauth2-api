@@ -94,6 +94,21 @@ client.refreshToken('afzGuTtQI9hhXY4rhMP7lp7RCyaT0C').then(token => console.log(
 // New access token: ANawRpft7SNOcibq7HLLfCA8rGQ0bp
 ```
 
+## Revoke Token
+##### Usage
+`client.revokeToken(token)`
+
+`token` - Oauth2 access token
+
+Returns: `Promise<Token>` (token is null)
+
+##### Example
+
+```js
+client.revokeToken('afzGuTtQI9hhXY4rhMP7lp7RCyaT0C').then(token => console.log('Access token successfully revoked!'))
+// New access token: ANawRpft7SNOcibq7HLLfCA8rGQ0bp
+```
+
 
 ## Classes
 
