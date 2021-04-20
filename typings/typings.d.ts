@@ -2,11 +2,11 @@ export = Client;
 declare class Client {
   constructor(...args: any[]);
 
-  getAccessToken(...args: string[]): void;
+  getAccessToken(...args: string[]): Promise<any>;
 
-  getGuilds(...args: any[]): void;
+  getGuilds(...args: any[]): Promise<any>;
 
-  getUser(...args: string[]): void;
+  getUser(...args: string[]): Promise<any>;
 
-  refreshToken(...args: any[]): void;
+  refreshToken(...args: any[]): Promise<any>;
 }
