@@ -1,5 +1,5 @@
 const fetch = require("node-fetch");
-const API = "https://discord.com/api/v7";
+const API = "https://discord.com/api/v9";
 const Token = require("./classes/token.js");
 const User = require("./classes/user.js");
 const Guild = require("./classes/guild.js");
